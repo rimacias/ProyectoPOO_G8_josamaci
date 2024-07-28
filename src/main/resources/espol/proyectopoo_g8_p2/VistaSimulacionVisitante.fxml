@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="espol.proyectopoo_g8_p2.VistaSimulacionVisitanteController">
+   <children>
+      <TabPane prefHeight="660.0" prefWidth="700.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Con Código">
+               <content>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Ingrese el código de acceso del visitante:">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="txtCodigo" prefHeight="35.0" prefWidth="400.0">
+                           <VBox.margin>
+                              <Insets bottom="45.0" left="200.0" right="200.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Button fx:id="comprobarCodigo" mnemonicParsing="false" onMouseClicked="#comprobarCodigo" text="Comprobar" />
+                     </children>
+                  </VBox>
+               </content>
+          </Tab>
+          <Tab text="Sin Código">
+               <content>
+                  <VBox alignment="CENTER" prefHeight="164.0" prefWidth="300.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="270.0">
+                           <children>
+                              <Label text="Nombre del visitante:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="txtNombreVisitante" prefHeight="25.0" prefWidth="114.0">
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="300.0">
+                           <children>
+                              <Label text="Cédula del visitante:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="10.0" />
+                                 </padding>
+                              </Label>
+                              <TextField fx:id="txtCedulaVisitante" prefHeight="25.0" prefWidth="114.0">
+                                 <HBox.margin>
+                                    <Insets left="22.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="300.0">
+                           <children>
+                              <Label text="Nombre del residente:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtNombreResidente" prefHeight="25.0" prefWidth="114.0">
+                                 <HBox.margin>
+                                    <Insets left="22.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="300.0">
+                           <children>
+                              <Label text="Manzana del residente:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtManzanaResidente" prefHeight="25.0" prefWidth="114.0">
+                                 <HBox.margin>
+                                    <Insets left="17.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="300.0">
+                           <children>
+                              <Label text="Villa del residente:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtVillaResidente" prefHeight="25.0" prefWidth="114.0">
+                                 <HBox.margin>
+                                    <Insets left="45.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="40.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Button fx:id="enviar" mnemonicParsing="false" onMouseClicked="#enviar" text="Enviar" />
+                     </children>
+                  </VBox>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="botRegresar" mnemonicParsing="false" onMouseClicked="#volver" text="Regresar">
+         <VBox.margin>
+            <Insets bottom="15.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

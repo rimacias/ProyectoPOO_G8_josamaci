@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="espol.proyectopoo_g8_p2.VistaSimulacionResidenteController">
+   <children>
+      <TabPane prefHeight="660.0" prefWidth="700.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Vehículo">
+               <content>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Ingrese la matrícula del vehículo:">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="txtVehiculo" prefHeight="35.0" prefWidth="400.0">
+                           <VBox.margin>
+                              <Insets bottom="45.0" left="200.0" right="200.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Button fx:id="comprobarVehiculo" mnemonicParsing="false" onMouseClicked="#comprobarVehiculo" text="Comprobar" />
+                     </children>
+                  </VBox>
+               </content>
+          </Tab>
+          <Tab text="Peaton">
+               <content>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Ingrese la cédula del peatón:">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="txtCedula" prefHeight="35.0" prefWidth="400.0">
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="150.0" right="150.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets left="100.0" right="100.0" />
+                           </padding>
+                        </TextField>
+                        <Label text="Ingrese el código del peatón:">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="txtCodigo" prefHeight="35.0" prefWidth="400.0">
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="150.0" right="150.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Button fx:id="comprobarPeaton" mnemonicParsing="false" onMouseClicked="#comprobarPeaton" text="Comprobar" />
+                     </children>
+                     <padding>
+                        <Insets left="50.0" right="50.0" />
+                     </padding>
+                  </VBox>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="botRegresar" mnemonicParsing="false" onMouseClicked="#volver" text="Regresar">
+         <VBox.margin>
+            <Insets bottom="15.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

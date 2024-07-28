@@ -1,0 +1,6 @@
+mail.smtp.host=smtp.gmail.com
+mail.smtp.port=25
+mail.smtp.user=proyectopoogrupo8@gmail.com
+mail.smtp.password=proypoo8
+mail.smtp.starttls.enable=true
+mail.smtp.auth=true

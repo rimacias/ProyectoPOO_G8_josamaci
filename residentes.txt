@@ -1,0 +1,2 @@
+jmaci,JMaci,josamaci@espol.edu.com,MASCULINO,jose macias,1234567890,1234
+ridumoli,Ridumoli,ridumoli@espol.edu.com,MASCULINO,ricardo molina,0987654321,5678
